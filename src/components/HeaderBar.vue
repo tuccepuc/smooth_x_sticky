@@ -40,21 +40,21 @@ export default {
         moveIn: function()
         {
             // console.log("moveIn");
-            gsap.to(this.$el, {duration: .35, backgroundColor: "#ffffff", transformOrigin: "right center", margin: "0px", width: "100%", height: "160px", translateX: 0, translateY: 0, ease: "back.in"});
+            gsap.to(this.$el, {duration: .35, backgroundColor: "#ffffff", transformOrigin: "right center", margin: "0%", width: "100%", height: "160px", translateX: 0, translateY: 0, ease: "back.in"});
             gsap.to(this.$refs.barItems, {duration: .45, alpha: 1, marginLeft: "10%", ease: "cubic.inOut", delay: .125});
         },
 
         hangOut: function()
         {
             // console.log("hangOut");
-            gsap.to(this.$el, {duration: .35, backgroundColor: "#ffffff", transformOrigin: "right center", margin: "40px", width: "90%", height: "100px", translateX: 0, translateY: 0, ease: "back.inOut"});
+            gsap.to(this.$el, {duration: .35, backgroundColor: "#ffffff", transformOrigin: "right center", margin: "5%", width: "90%", height: "100px", translateX: 0, translateY: 0, ease: "back.inOut"});
             gsap.to(this.$refs.barItems, {duration: .45, alpha: 1, marginLeft: "15%", ease: "cubic.out", delay: 0});
         },
 
         moveOut: function()
         {
             // console.log("moveOut");
-            gsap.to(this.$el, {duration: .225, backgroundColor: "#121212", transformOrigin: "right center", margin: "40px", width: "120px", height: "120px", translateX: 20, translateY: -10, ease: "sine.inOut"});
+            gsap.to(this.$el, {duration: .225, backgroundColor: "#121212", transformOrigin: "right center", margin: "5%", width: "120px", height: "120px", translateX: 20, translateY: -10, ease: "sine.inOut"});
             gsap.to(this.$refs.barItems, {duration: .1, alpha: 0, ease: "cubic.in", delay: 0});
         },
 
